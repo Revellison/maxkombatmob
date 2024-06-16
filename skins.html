@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Безымянная страница</title>
+<meta name="generator" content="WYSIWYG Web Builder 18 - https://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/mobile_maxkombat.css" rel="stylesheet">
+<link href="css/skins.css" rel="stylesheet">
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/wb.overlay.min.js"></script>
+<script src="js/wwb18.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $('#OverlayMenu1-overlay').overlay({popup:true, hideTransition:true});
+   $('#OverlayMenu1').on('click', function(e)
+   {
+      $.overlay.toggle($('#OverlayMenu1-overlay'));
+      return false;
+   });
+});
+</script>
+</head>
+<body>
+<div id="Layer1">
+<div id="Layer4">
+</div>
+<div id="Layer3">
+</div>
+<div id="wb_Image1">
+<img src="images/lvl1.jpg" id="Image1" alt="" width="203" height="203"></div>
+<button type="button" id="ThemeableButton1" onclick="SetImage('Image1','images/stoyachyi(maxlvl).jpg');return false;" name="" value="Button" class="ui-button ui-corner-all">Button</button>
+<div id="wb_OverlayMenu1">
+<a href="#" id="OverlayMenu1">
+<span class="line"></span>
+<span class="line">
+</span><span class="line"></span>
+</a>
+</div>
+</div>
+<div id="OverlayMenu1-overlay">
+<div class="OverlayMenu1">
+<ul class="drilldown-menu" role="menu">
+<li><a role="menuitem" href="./index.html" class="OverlayMenu1-effect"><i class="fa fa-home overlay-icon"></i>Back</a></li>
+<li><a role="menuitem" href="./upgrades.html" class="OverlayMenu1-effect"><i class="fa fa-angle-double-up overlay-icon"></i>Улучшения</a></li>
+<li><a role="menuitem" href="./skins.html" class="OverlayMenu1-effect"><i class="fa fa-paint-brush overlay-icon"></i>Скины</a></li>
+   </ul>
+</div>
+</div>
+</body>
+</html>

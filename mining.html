@@ -7,9 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="css/font-awesome.min.css" rel="stylesheet">
 <link href="css/mobile_maxkombat.css" rel="stylesheet">
-<link href="css/index.css" rel="stylesheet">
+<link href="css/mining.css" rel="stylesheet">
 <script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/wb.overlay.min.js"></script>
+<script src="js/wwb18.min.js"></script>
 <script>
 $(document).ready(function()
 {
@@ -29,73 +30,14 @@ $(document).ready(function()
 <div id="Layer3">
 </div>
 <div id="wb_Image1">
-<img src="images/lvl1.jpg" id="Image1" alt="" width="203" height="203"><div id="Image1-overlay">lvl 1</div>
-</div>
-<div id="Html1">
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <script>
-	btn.onclick = e => navigator.vibrate(200);
-	</script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Клики</title>
-    </head>
-<body style="text-align: center;">
-
-    <h1></h1>
-    <h4></h4>
-    <p>
-        <font size="3" color="white" face="Arial">
-               ⠀⠀Макс коинов намийнино
-        </font>
-    </p>
-    <p>
-        <font size="3" color="orange" face="impact">
-            <span id="display">0</span> 
-        </font>
-    </p>
-
-    <script>
-   
-        let count = 0;
-        let disp = document.getElementById("display");
-        let btn = document.getElementById("Image1");
-       
-
-       
-        function updateClickCount() {
-            count++;
-            disp.innerHTML = count;
-            localStorage.setItem("clickCount", count);
-            disp.style.animation = "fadeIn 1s ease-in-out";
-        }
-
-        
-        window.onload = function() {
-            if(localStorage.getItem("clickCount")) {
-                count = parseInt(localStorage.getItem("clickCount"));
-                disp.innerHTML = count;
-            }
-        };
-
-       
-        btn.addEventListener("click", updateClickCount);
-
-    </script>
-</body>
-</html></div>
-<div id="wb_Icon1">
-<a href="https://github.com/Revellison/maxkombatmob"><div id="Icon1"><i class="fa fa-github"></i></div></a></div>
-<div id="Layer2">
+<img src="images/lvl1.jpg" id="Image1" alt="" width="203" height="203"></div>
+<button type="button" id="ThemeableButton1" onclick="SetImage('Image1','images/stoyachyi(maxlvl).jpg');return false;" name="" value="Button" class="ui-button ui-corner-all">Button</button>
 <div id="wb_OverlayMenu1">
 <a href="#" id="OverlayMenu1">
 <span class="line"></span>
 <span class="line">
 </span><span class="line"></span>
 </a>
-</div>
 </div>
 </div>
 <div id="OverlayMenu1-overlay">
