@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Безымянная страница</title>
+<meta name="generator" content="WYSIWYG Web Builder 18 - https://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/mobile_maxkombat.css" rel="stylesheet">
+<link href="css/index.css" rel="stylesheet">
+</head>
+<body>
+<div id="Layer1">
+<div id="Layer3">
+</div>
+<div id="wb_Image1">
+<img src="images/lvl1.jpg" id="Image1" alt="" width="203" height="203"><div id="Image1-overlay">lvl 1</div>
+</div>
+<div id="Html1">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Клики</title>
+    </head>
+<body style="text-align: center;">
+
+    <h1></h1>
+    <h4></h4>
+    <p>
+        <font size="3" color="white" face="Arial">
+               ⠀⠀Макс коинов намийнино
+        </font>
+    </p>
+    <p>
+        <font size="3" color="orange" face="impact">
+            <span id="display">0</span> 
+        </font>
+    </p>
+
+    <script>
+   
+        let count = 0;
+        let disp = document.getElementById("display");
+        let btn = document.getElementById("Image1");
+
+       
+        function updateClickCount() {
+            count++;
+            disp.innerHTML = count;
+            localStorage.setItem("clickCount", count);
+            disp.style.animation = "fadeIn 1s ease-in-out";
+        }
+
+        
+        window.onload = function() {
+            if(localStorage.getItem("clickCount")) {
+                count = parseInt(localStorage.getItem("clickCount"));
+                disp.innerHTML = count;
+            }
+        };
+
+       
+        btn.addEventListener("click", updateClickCount);
+
+    </script>
+</body>
+</html></div>
+<div id="Layer2">
+<div id="wb_JavaScript1">
+<div id="typewriter"></div>
+<script>
+var ch = 0;
+var txt = 'loading....';
+var speed = 100;
+var pause = 5000;
+
+function typeWriterInit()
+{
+   ch = 0; 
+   document.getElementById("typewriter").innerHTML = '';
+   typeWriter();
+}
+function typeWriter() 
+{
+   if (ch < txt.length) 
+   {
+      document.getElementById("typewriter").innerHTML += txt.charAt(ch);
+      ch++;
+      setTimeout(typeWriter, speed);
+   }
+   else
+   {
+      if (pause > 0)
+      {
+          setTimeout(typeWriterInit, pause);
+      }
+   }
+}
+typeWriterInit();
+</script></div>
+</div>
+</div>
+</body>
+</html>
