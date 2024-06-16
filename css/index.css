@@ -9,11 +9,20 @@ body
    margin: 0;
    padding: 0;
 }
-#Layer3
+#Layer4
 {
    background-color: #4F4F4F;
    background-image: none;
+   border-radius: 10px;
+   box-shadow: 0px 0px 5px #4F4F4F;
+   animation: scale-in-vertical-center 1000ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms 1 normal both;
+}
+#Layer3
+{
+   background-color: #2D2D2D;
+   background-image: none;
    border-radius: 30px;
+   box-shadow: 0px 0px 12px #2D2D2D;
    animation: animate-fade-in 1000ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 1000ms 1 normal both;
 }
 #Layer1
@@ -28,10 +37,11 @@ body
 }
 #Image1
 {
-   border: 0px solid #000000;
+   border: 0px solid transparent;
    border-radius: 1000px;
    padding: 0;
    animation: animate-fade-in-down 1000ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 1000ms 1 normal both;
+   box-shadow: 0px 0px 10px #000000;
    margin: 0;
    left: 0;
    top: 0;
@@ -65,30 +75,298 @@ body
    margin-top: 5px;
    transition: margin-top 5ms cubic-bezier(0.075, 0.82, 0.165, 1) 0ms;
 }
+#wb_Icon1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid transparent;
+   border-radius: 0px;
+   text-align: center;
+   animation: animate-fade-in 1000ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 1000ms 1 normal both;
+   margin: 0;
+   padding: 0;
+   vertical-align: top;
+}
+#wb_Icon1 a::after
+{
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   z-index: 1;
+   pointer-events: auto;
+   content: "";
+}
+#Icon1
+{
+   height: 42px;
+   width: 31px;
+}
+#Icon1 i
+{
+   color: #4F4F4F;
+   display: inline-block;
+   font-size: 31px;
+   line-height: 42px;
+   vertical-align: middle;
+   width: 30px;
+}
+#wb_Icon1:hover #Icon1 i
+{
+   color: #808080;
+}
 #Layer2
 {
-   background-color: #000000;
+   background-color: #2D2D2D;
    background-image: none;
-   border-radius: 100px;
-   animation: animate-fade-in-left 1000ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms 1 reverse both;
+   border-radius: 0px;
+   animation: animate-fade-in 1000ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 1500ms 1 normal both;
+}
+#OverlayMenu1
+{
+   background-color: rgba(66,66,66,0.00);
+   background-image: none;
+   border: 0px solid #424242;
+   border-radius: 0px;
+   margin: 0;
+}
+#OverlayMenu1:hover
+{
+   background-color: rgba(204,204,204,0.00);
+   background-image: none;
+   border-color: #424242;
+}
+#OverlayMenu1
+{
+   display: block;
+   width: 41px;
+   height: 31px;
+   position: absolute;
+   overflow: hidden;
+}
+#OverlayMenu1 .line
+{
+   width: 20px;
+   height: 4px;
+   position: relative;
+   top: 2px;
+   background: #FFFFFF;
+   display: block;
+   margin: 4px auto;
+   transition: all 0.3s ease-in-out;
+}
+#OverlayMenu1:hover .line
+{
+   background: #424242;
+}
+#OverlayMenu1.open .line:nth-child(1)
+{
+   transform: translateY(8px) rotate(45deg);
+}
+#OverlayMenu1.open .line:nth-child(2)
+{
+   opacity: 0;
+}
+#OverlayMenu1.open .line:nth-child(3)
+{
+   transform: translateY(-8px) rotate(-45deg);
+}
+#OverlayMenu1-overlay
+{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   left: 0;
+   overflow-y: auto;
+   position: absolute;
+   top: 0;
+   width: 300px;
+   z-index: 9998 !important;
+   background-color: rgba(122,122,122,0.87);
+}
+#OverlayMenu1-overlay ul
+{
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   font-size: 19px;
+   text-decoration: none;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+.OverlayMenu1
+{
+   width: 100%;
+   max-width: 400px;
+}
+.OverlayMenu1 a
+{
+   text-decoration: none;
+}
+.OverlayMenu1 ul
+{
+   list-style: none;
+   padding: 0;
+   text-align: center;
+}
+.OverlayMenu1 li
+{
+   position: relative;
+}
+.OverlayMenu1 li a
+{
+   display: block;
+   position: relative;
+   padding: 10px 15px 10px 15px;
+   color: #FFFFFF;
+   outline: none;
+}
+.OverlayMenu1 li a:hover
+{
+   color: #424242;
+   background-color: #CCCCCC;
+}
+#OverlayMenu1-overlay
+{
+   opacity: 0;
+   visibility: hidden;
+   transition: opacity 400ms, visibility 0s 400ms;
+}
+#OverlayMenu1-overlay.show
+{
+   opacity: 1;
+   visibility: visible;
+   transition: opacity 400ms;
+}
+#OverlayMenu1-overlay ul li a
+{
+   opacity: 0;
+   transform: translateY(100px);
+   transition: transform 400ms, opacity 400ms;
+}
+#OverlayMenu1-overlay.show ul li a
+{
+   opacity: 1;
+   transform: translateY(0);
+}
+.OverlayMenu1 li.drilldown-back > a 
+{
+   padding-left: 40px;
+   background: rgba(0,0,0,0.1);
+}
+.OverlayMenu1 li.drilldown-back > a:hover
+{
+   background-color: #CCCCCC;
+}
+.OverlayMenu1 li.drilldown-back a:after,
+.OverlayMenu1 li > a:not(:only-child):after
+{
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   display: inline-block;
+   width: 0;
+   height: 0;
+   margin-left: 9px;
+   border-left: 9px solid #FFFFFF;
+   border-top: 7px solid transparent;
+   border-bottom: 7px solid transparent;
+   border-right: 0 dotted;
+   content: " ";
+}
+.OverlayMenu1 li.drilldown-back a:after
+{
+   left: 9px;
+   color: #FFFFFF;
+   transform: translateY(-50%) rotate(180deg);
+}
+.OverlayMenu1 li.drilldown-back a:hover:after,
+.OverlayMenu1 li > a:not(:only-child):hover:after
+{
+   border-left-color: #424242;
+}
+.OverlayMenu1 li > a:after
+{
+   color: rgba(0,0,0,0.15);
+   right: 10px;
+}
+.OverlayMenu1 .drilldown-menu 
+{
+   margin: 0;
+   width: 100%;
+}
+.OverlayMenu1 li .drilldown-submenu 
+{
+   display: none;
+}
+.drilldown-menu.drilldown-subview li,
+.drilldown-menu.drilldown-subview li.drilldown-subviewopen > a,
+.drilldown-menu.drilldown-subview li.drilldown-subview > a 
+{
+   display: none;
+}
+.drilldown-menu.drilldown-subview li.drilldown-subview,
+.drilldown-menu.drilldown-subview li.drilldown-subview .drilldown-submenu,
+.drilldown-menu.drilldown-subview li.drilldown-subviewopen,
+.drilldown-menu.drilldown-subview li.drilldown-subviewopen > .drilldown-submenu,
+.drilldown-menu.drilldown-subview li.drilldown-subviewopen > .drilldown-submenu > li 
+{
+   display: block;
+}
+.OverlayMenu1 > .drilldown-submenu
+{
+   left: 0;
+   margin: 0;
+   position: absolute;
+   top: 50px;
+   width: 100%;
+}
+#OverlayMenu1-overlay .overlay-icon
+{
+   margin: 0 10px 0 0 ;
+}
+.OverlayMenu1-effect
+{
+   transition: all 500ms linear;
+}
+#wb_Icon1
+{
+   position: absolute;
+   left: 299px;
+   top: 83px;
+   width: 31px;
+   height: 42px;
+   text-align: center;
+   z-index: 5;
+}
+#wb_OverlayMenu1
+{
+   position: absolute;
+   left: 0px;
+   top: 6px;
+   width: 41px;
+   height: 31px;
+   z-index: 0;
 }
 #Html1
 {
    position: absolute;
-   left: 97px;
+   left: 84px;
    top: 285px;
    width: 215px;
    height: 48px;
-   z-index: 3;
+   z-index: 4;
 }
 #wb_Image1
 {
    position: absolute;
-   left: 103px;
+   left: 90px;
    top: 100px;
    width: 203px;
    height: 203px;
-   z-index: 2;
+   z-index: 3;
 }
 #Layer1
 {
@@ -98,45 +376,36 @@ body
    top: 0px;
    width: 383px;
    height: 878px;
-   z-index: 6;
-}
-#typewriter
-{
-   color: #FFA500;
-   font-size: 35px;
-   font-family: "Arial";
-   font-weight: bold;
-   font-style: normal;
-   text-align: left;
-   text-decoration: none;
-}
-#wb_JavaScript1
-{
-   position: absolute;
-   left: 16px;
-   top: 0px;
-   width: 184px;
-   height: 47px;
-   z-index: 0;
+   z-index: 8;
 }
 #Layer2
 {
    position: absolute;
    text-align: left;
-   left: 83px;
-   top: 303px;
-   width: 217px;
-   height: 47px;
-   z-index: 4;
+   left: 49px;
+   top: 83px;
+   width: 50px;
+   height: 42px;
+   z-index: 6;
 }
 #Layer3
 {
    position: absolute;
    text-align: left;
-   left: 50px;
+   left: 37px;
    top: 75px;
    width: 308px;
    height: 307px;
+   z-index: 2;
+}
+#Layer4
+{
+   position: absolute;
+   text-align: left;
+   left: 20px;
+   top: 26px;
+   width: 342px;
+   height: 629px;
    z-index: 1;
 }
 @media only screen and (max-width: 382px) and (orientation: portrait)

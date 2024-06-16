@@ -5,11 +5,29 @@
 <title>Безымянная страница</title>
 <meta name="generator" content="WYSIWYG Web Builder 18 - https://www.wysiwygwebbuilder.com">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/font-awesome.min.css" rel="stylesheet">
 <link href="css/mobile_maxkombat.css" rel="stylesheet">
 <link href="css/index.css" rel="stylesheet">
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/wb.overlay.min.js"></script>
+<script src="js/wb.drilldownmenu.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $('#OverlayMenu1-overlay').overlay({popup:true, hideTransition:true});
+   $('.OverlayMenu1').drilldownmenu({backText: 'Back'});
+   $('#OverlayMenu1').on('click', function(e)
+   {
+      $.overlay.toggle($('#OverlayMenu1-overlay'));
+      return false;
+   });
+});
+</script>
 </head>
 <body>
 <div id="Layer1">
+<div id="Layer4">
+</div>
 <div id="Layer3">
 </div>
 <div id="wb_Image1">
@@ -66,39 +84,28 @@
     </script>
 </body>
 </html></div>
+<div id="wb_Icon1">
+<a href="https://github.com/Revellison/maxkombatmob"><div id="Icon1"><i class="fa fa-github"></i></div></a></div>
 <div id="Layer2">
-<div id="wb_JavaScript1">
-<div id="typewriter"></div>
-<script>
-var ch = 0;
-var txt = 'loading....';
-var speed = 100;
-var pause = 5000;
-
-function typeWriterInit()
-{
-   ch = 0; 
-   document.getElementById("typewriter").innerHTML = '';
-   typeWriter();
-}
-function typeWriter() 
-{
-   if (ch < txt.length) 
-   {
-      document.getElementById("typewriter").innerHTML += txt.charAt(ch);
-      ch++;
-      setTimeout(typeWriter, speed);
-   }
-   else
-   {
-      if (pause > 0)
-      {
-          setTimeout(typeWriterInit, pause);
-      }
-   }
-}
-typeWriterInit();
-</script></div>
+<div id="wb_OverlayMenu1">
+<a href="#" id="OverlayMenu1">
+<span class="line"></span>
+<span class="line">
+</span><span class="line"></span>
+</a>
+</div>
+</div>
+</div>
+<div id="OverlayMenu1-overlay">
+<div class="OverlayMenu1">
+<ul class="drilldown-menu" role="menu">
+<li>
+<a role="menuitem" href="#" class="OverlayMenu1-effect">Улучшения</a>
+<ul class="drilldown-submenu" role="menu">
+<li><a role="menuitem" href="#" class="OverlayMenu1-effect">soon</a></li>
+</ul>
+</li>
+   </ul>
 </div>
 </div>
 </body>

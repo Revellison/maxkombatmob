@@ -8,10 +8,10 @@
    0% { transform: translate(0px,-100px) rotate(0deg) ; opacity: 0;  }
    100% { transform: translate(0px,0px) rotate(0deg) ; opacity: 1;  }
 }
-@keyframes animate-fade-in-left
+@keyframes scale-in-vertical-center
 {
-   0% { transform: translate(-100px,0px) rotate(0deg) ; opacity: 0;  }
-   100% { transform: translate(0px,0px) rotate(0deg) ; opacity: 1;  }
+   0% { transform: rotate(0deg) scale(1.0,0.0) ; opacity: 0.0;  }
+   100% { transform: rotate(0deg) scale(1.0,1.0) ; opacity: 1.0;  }
 }
 h1, .h1
 {
