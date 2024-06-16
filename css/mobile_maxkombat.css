@@ -102,6 +102,6 @@ h6, .h6
    --color: #2E74B5;
    background-color: transparent;
 }
-@media only screen and (max-width: 382px) and (orientation: portrait)
+@media only screen and (max-width: 364px) and (orientation: portrait)
 {
 }

@@ -408,7 +408,7 @@ body
    height: 629px;
    z-index: 1;
 }
-@media only screen and (max-width: 382px) and (orientation: portrait)
+@media only screen and (max-width: 364px) and (orientation: portrait)
 {
 body
 {

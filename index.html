@@ -37,6 +37,9 @@ $(document).ready(function()
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script>
+	btn.onclick = e => navigator.vibrate(200);
+	</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Клики</title>
@@ -61,6 +64,7 @@ $(document).ready(function()
         let count = 0;
         let disp = document.getElementById("display");
         let btn = document.getElementById("Image1");
+       
 
        
         function updateClickCount() {
