@@ -1,2 +1,2 @@
 # maxkombatmob
-mobilever
+Мое первое mini-app приложение для телеграмма
