@@ -274,8 +274,8 @@ body
 #wb_Icon1
 {
    position: absolute;
-   left: 299px;
-   top: 67px;
+   left: 290px;
+   top: 73px;
    width: 31px;
    height: 42px;
    text-align: center;
@@ -284,7 +284,7 @@ body
 #wb_OverlayMenu1
 {
    position: absolute;
-   left: 0px;
+   left: 5px;
    top: 6px;
    width: 41px;
    height: 31px;
@@ -293,8 +293,8 @@ body
 #Html1
 {
    position: absolute;
-   left: 84px;
-   top: 269px;
+   left: 75px;
+   top: 268px;
    width: 215px;
    height: 48px;
    z-index: 4;
@@ -302,8 +302,8 @@ body
 #wb_Image1
 {
    position: absolute;
-   left: 90px;
-   top: 84px;
+   left: 81px;
+   top: 85px;
    width: 203px;
    height: 203px;
    z-index: 3;
@@ -315,15 +315,15 @@ body
    left: 0px;
    top: 0px;
    width: 365px;
-   height: 612px;
+   height: 610px;
    z-index: 8;
 }
 #Layer2
 {
    position: absolute;
    text-align: left;
-   left: 49px;
-   top: 67px;
+   left: 39px;
+   top: 73px;
    width: 50px;
    height: 42px;
    z-index: 6;
@@ -332,8 +332,8 @@ body
 {
    position: absolute;
    text-align: left;
-   left: 37px;
-   top: 59px;
+   left: 28px;
+   top: 67px;
    width: 308px;
    height: 307px;
    z-index: 2;
@@ -342,8 +342,8 @@ body
 {
    position: absolute;
    text-align: left;
-   left: 20px;
-   top: 10px;
+   left: 11px;
+   top: 7px;
    width: 342px;
    height: 598px;
    z-index: 1;
