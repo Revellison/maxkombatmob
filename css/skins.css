@@ -243,6 +243,10 @@ body
 {
    transition-delay: 100ms;
 }
+#OverlayMenu1-overlay.show ul li:nth-child(4) a
+{
+   transition-delay: 150ms;
+}
 #OverlayMenu1-overlay .overlay-icon
 {
    margin: 0 10px 0 0 ;
@@ -272,8 +276,8 @@ body
 #ThemeableButton1
 {
    position: absolute;
-   left: 82px;
-   top: 348px;
+   left: 37px;
+   top: 414px;
    width: 30px;
    height: 33px;
    z-index: 3;

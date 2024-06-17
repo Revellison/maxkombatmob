@@ -275,7 +275,7 @@ body
 {
    position: absolute;
    left: 299px;
-   top: 83px;
+   top: 67px;
    width: 31px;
    height: 42px;
    text-align: center;
@@ -294,7 +294,7 @@ body
 {
    position: absolute;
    left: 84px;
-   top: 285px;
+   top: 269px;
    width: 215px;
    height: 48px;
    z-index: 4;
@@ -303,7 +303,7 @@ body
 {
    position: absolute;
    left: 90px;
-   top: 100px;
+   top: 84px;
    width: 203px;
    height: 203px;
    z-index: 3;
@@ -314,8 +314,8 @@ body
    text-align: left;
    left: 0px;
    top: 0px;
-   width: 383px;
-   height: 878px;
+   width: 365px;
+   height: 612px;
    z-index: 8;
 }
 #Layer2
@@ -323,7 +323,7 @@ body
    position: absolute;
    text-align: left;
    left: 49px;
-   top: 83px;
+   top: 67px;
    width: 50px;
    height: 42px;
    z-index: 6;
@@ -333,7 +333,7 @@ body
    position: absolute;
    text-align: left;
    left: 37px;
-   top: 75px;
+   top: 59px;
    width: 308px;
    height: 307px;
    z-index: 2;
@@ -343,9 +343,9 @@ body
    position: absolute;
    text-align: left;
    left: 20px;
-   top: 26px;
+   top: 10px;
    width: 342px;
-   height: 629px;
+   height: 598px;
    z-index: 1;
 }
 @media only screen and (max-width: 364px) and (orientation: portrait)
