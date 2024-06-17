@@ -271,6 +271,21 @@ body
 {
    transition: all 500ms linear;
 }
+#wb_Image2
+{
+   vertical-align: top;
+}
+#Image2
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
 #wb_Icon1
 {
    position: absolute;
@@ -308,6 +323,15 @@ body
    height: 203px;
    z-index: 3;
 }
+#wb_Image2
+{
+   position: absolute;
+   left: 107px;
+   top: 434px;
+   width: 34px;
+   height: 34px;
+   z-index: 7;
+}
 #Layer1
 {
    position: absolute;
@@ -316,7 +340,7 @@ body
    top: 0px;
    width: 365px;
    height: 610px;
-   z-index: 8;
+   z-index: 9;
 }
 #Layer2
 {
