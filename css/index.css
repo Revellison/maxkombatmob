@@ -355,14 +355,125 @@ body
    background-color: #000000;
    background-image: none;
 }
+#Layer4
+{
+   left: 20px;
+   top: 10px;
+   width: 342px;
+   height: 598px;
+   visibility: visible;
+   display: block;
+}
+#Layer3
+{
+   left: 37px;
+   top: 59px;
+   width: 308px;
+   height: 307px;
+   visibility: visible;
+   display: block;
+}
 #Layer1
 {
    left: 0px;
    top: 0px;
-   width: 408px;
-   height: 878px;
+   width: 369px;
+   height: 613px;
    visibility: visible;
    display: block;
+}
+#wb_Image1
+{
+   left: 90px;
+   top: 84px;
+   width: 203px;
+   height: 203px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#Html1
+{
+   left: 84px;
+   top: 269px;
+   width: 215px;
+   height: 48px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Icon1
+{
+   left: 299px;
+   top: 67px;
+   width: 31px;
+   height: 42px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#Icon1
+{
+   width: 31px;
+   height: 42px;
+}
+#Icon1 i
+{
+   line-height: 42px;
+   font-size: 31px;
+   width: 30px;
+}
+#Layer2
+{
+   left: 49px;
+   top: 67px;
+   width: 50px;
+   height: 42px;
+   visibility: visible;
+   display: block;
+}
+#wb_OverlayMenu1
+{
+   left: 0px;
+   top: 6px;
+   width: 41px;
+   height: 31px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+}
+#OverlayMenu1
+{
+   background-color: rgba(66,66,66,0.00);
+   background-image: none;
+   border: 0px solid #424242;
+   border-radius: 0px;
+   width: 41px;
+   height: 31px;
+}
+#OverlayMenu1:hover
+{
+   background-color: rgba(204,204,204,0.00);
+   background-image: none;
+   border-color: #424242;
+}
+#OverlayMenu1 .line
+{
+   background: #FFFFFF;
+}
+#OverlayMenu1:hover .line
+{
+   background: #424242;
+}
+#OverlayMenu1 .line
+{
+   top: 2px;
+}
+#OverlayMenu1-overlay ul
+{
+   font-size: 19px;
+   text-align: center;
 }
 }
         @keyframes fadeIn {
