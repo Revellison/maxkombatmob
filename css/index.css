@@ -271,156 +271,27 @@ body
 {
    transition: all 500ms linear;
 }
-#wb_Text1 
+#Button1
 {
-   background-color: transparent;
+   border: 1px solid #4F4F4F;
+   border-radius: 4px;
+   background-color: #4F4F4F;
    background-image: none;
-   border: 0px solid #000000;
-   border-radius: 0px;
-   padding: 0;
+   color: #FFA500;
+   font-family: Impact;
+   font-weight: normal;
+   font-style: normal;
+   font-size: 13px;
+   padding: 1px 6px 1px 6px;
+   text-align: center;
+   -webkit-appearance: none;
    margin: 0;
-   text-align: left;
+   animation: animate-fade-in 2500ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 500ms 1 normal both;
 }
-#wb_Text1 div
-{
-   text-align: left;
 }
-#Layer6
+#Button1:focus
 {
-   background-color: #808080;
-   background-image: none;
-   border-radius: 30px;
-   box-shadow: 0px 0px 6px #000000;
-}
-#wb_Image14
-{
-   vertical-align: top;
-}
-#Image14
-{
-   border: 0px solid #000000;
-   border-radius: 100px;
-   padding: 0;
-   margin: 0;
-   left: 0;
-   top: 0;
-   width: 100%;
-   height: 100%;
-}
-#wb_Image15
-{
-   vertical-align: top;
-}
-#Image15
-{
-   border: 0px solid #000000;
-   border-radius: 100px;
-   padding: 0;
-   margin: 0;
-   left: 0;
-   top: 0;
-   width: 100%;
-   height: 100%;
-}
-#wb_Image17
-{
-   vertical-align: top;
-}
-#Image17
-{
-   border: 0px solid #000000;
-   border-radius: 100px;
-   padding: 0;
-   margin: 0;
-   left: 0;
-   top: 0;
-   width: 100%;
-   height: 100%;
-}
-#wb_Image18
-{
-   vertical-align: top;
-}
-#Image18
-{
-   border: 0px solid #000000;
-   border-radius: 100px;
-   padding: 0;
-   margin: 0;
-   left: 0;
-   top: 0;
-   width: 100%;
-   height: 100%;
-}
-#wb_Image19
-{
-   vertical-align: top;
-}
-#Image19
-{
-   border: 0px solid #000000;
-   border-radius: 100px;
-   padding: 0;
-   margin: 0;
-   left: 0;
-   top: 0;
-   width: 100%;
-   height: 100%;
-}
-#wb_Image21
-{
-   vertical-align: top;
-}
-#Image21
-{
-   border: 0px solid #000000;
-   border-radius: 100px;
-   padding: 0;
-   margin: 0;
-   left: 0;
-   top: 0;
-   width: 100%;
-   height: 100%;
-}
-#wb_Image23
-{
-   vertical-align: top;
-}
-#Image23
-{
-   border: 0px solid #000000;
-   border-radius: 100px;
-   padding: 0;
-   margin: 0;
-   left: 0;
-   top: 0;
-   width: 100%;
-   height: 100%;
-}
-#wb_Image24
-{
-   vertical-align: top;
-}
-#Image24
-{
-   border: 0px solid #000000;
-   border-radius: 100px;
-   padding: 0;
-   margin: 0;
-   left: 0;
-   top: 0;
-   width: 100%;
-   height: 100%;
-}
-#Layer6
-{
-   position: absolute;
-   text-align: left;
-   left: 28px;
-   top: 389px;
-   width: 308px;
-   height: 141px;
-   z-index: 16;
+   outline: 0;
 }
 #wb_Icon1
 {
@@ -430,40 +301,13 @@ body
    width: 31px;
    height: 42px;
    text-align: center;
-   z-index: 14;
-}
-#wb_Image24
-{
-   position: absolute;
-   left: 199px;
-   top: 81px;
-   width: 49px;
-   height: 49px;
-   z-index: 8;
-}
-#wb_Image23
-{
-   position: absolute;
-   left: 199px;
-   top: 21px;
-   width: 49px;
-   height: 49px;
-   z-index: 7;
-}
-#wb_Image21
-{
-   position: absolute;
-   left: 138px;
-   top: 81px;
-   width: 49px;
-   height: 49px;
-   z-index: 6;
+   z-index: 5;
 }
 #wb_OverlayMenu1
 {
    position: absolute;
-   left: 5px;
-   top: 6px;
+   left: 1px;
+   top: 3px;
    width: 41px;
    height: 31px;
    z-index: 0;
@@ -472,10 +316,10 @@ body
 {
    position: absolute;
    left: 75px;
-   top: 268px;
+   top: 267px;
    width: 215px;
    height: 48px;
-   z-index: 13;
+   z-index: 4;
 }
 #wb_Image1
 {
@@ -484,16 +328,16 @@ body
    top: 85px;
    width: 203px;
    height: 203px;
-   z-index: 12;
+   z-index: 3;
 }
-#wb_Text1
+#Button1
 {
    position: absolute;
-   left: 122px;
-   top: 0px;
-   width: 80px;
-   height: 22px;
-   z-index: 9;
+   left: 81px;
+   top: 353px;
+   width: 203px;
+   height: 26px;
+   z-index: 7;
 }
 #Layer1
 {
@@ -503,7 +347,7 @@ body
    top: 0px;
    width: 365px;
    height: 610px;
-   z-index: 27;
+   z-index: 9;
 }
 #Layer2
 {
@@ -511,9 +355,9 @@ body
    text-align: left;
    left: 39px;
    top: 73px;
-   width: 50px;
-   height: 42px;
-   z-index: 15;
+   width: 42px;
+   height: 34px;
+   z-index: 6;
 }
 #Layer3
 {
@@ -522,8 +366,8 @@ body
    left: 28px;
    top: 67px;
    width: 308px;
-   height: 307px;
-   z-index: 11;
+   height: 325px;
+   z-index: 2;
 }
 #Layer4
 {
@@ -533,51 +377,6 @@ body
    top: 6px;
    width: 342px;
    height: 598px;
-   z-index: 10;
-}
-#wb_Image19
-{
-   position: absolute;
-   left: 74px;
-   top: 81px;
-   width: 49px;
-   height: 49px;
-   z-index: 5;
-}
-#wb_Image18
-{
-   position: absolute;
-   left: 138px;
-   top: 21px;
-   width: 49px;
-   height: 49px;
-   z-index: 4;
-}
-#wb_Image17
-{
-   position: absolute;
-   left: 74px;
-   top: 21px;
-   width: 49px;
-   height: 49px;
-   z-index: 3;
-}
-#wb_Image15
-{
-   position: absolute;
-   left: 14px;
-   top: 81px;
-   width: 49px;
-   height: 49px;
-   z-index: 2;
-}
-#wb_Image14
-{
-   position: absolute;
-   left: 14px;
-   top: 21px;
-   width: 49px;
-   height: 49px;
    z-index: 1;
 }
 @media only screen and (max-width: 356px) and (orientation: portrait)
@@ -707,117 +506,6 @@ body
    font-size: 19px;
    text-align: center;
 }
-#wb_Text1
-{
-   left: 122px;
-   top: -1px;
-   width: 80px;
-   height: 22px;
-   visibility: visible;
-   display: inline;
-}
-#wb_Text1
-{
-   margin: 0;
-   padding: 0;
-}
-#Layer6
-{
-   left: 25px;
-   top: 382px;
-   width: 308px;
-   height: 203px;
-   visibility: visible;
-   display: block;
-}
-#wb_Image14
-{
-   left: 14px;
-   top: 21px;
-   width: 49px;
-   height: 49px;
-   visibility: visible;
-   display: inline;
-   margin: 0;
-   padding: 0;
-}
-#wb_Image15
-{
-   left: 14px;
-   top: 81px;
-   width: 49px;
-   height: 49px;
-   visibility: visible;
-   display: inline;
-   margin: 0;
-   padding: 0;
-}
-#wb_Image17
-{
-   left: 74px;
-   top: 21px;
-   width: 49px;
-   height: 49px;
-   visibility: visible;
-   display: inline;
-   margin: 0;
-   padding: 0;
-}
-#wb_Image18
-{
-   left: 138px;
-   top: 21px;
-   width: 49px;
-   height: 49px;
-   visibility: visible;
-   display: inline;
-   margin: 0;
-   padding: 0;
-}
-#wb_Image19
-{
-   left: 74px;
-   top: 81px;
-   width: 49px;
-   height: 49px;
-   visibility: visible;
-   display: inline;
-   margin: 0;
-   padding: 0;
-}
-#wb_Image21
-{
-   left: 138px;
-   top: 81px;
-   width: 49px;
-   height: 49px;
-   visibility: visible;
-   display: inline;
-   margin: 0;
-   padding: 0;
-}
-#wb_Image23
-{
-   left: 199px;
-   top: 21px;
-   width: 49px;
-   height: 49px;
-   visibility: visible;
-   display: inline;
-   margin: 0;
-   padding: 0;
-}
-#wb_Image24
-{
-   left: 199px;
-   top: 81px;
-   width: 49px;
-   height: 49px;
-   visibility: visible;
-   display: inline;
-   margin: 0;
-   padding: 0;
-}
 }
         @keyframes fadeIn {
             from {
@@ -831,7 +519,7 @@ body
         }
 
         #display {
-            animation: fadeIn 1s ease-in-out;
+            animation: fadeIn 2s ease-in-out;
             display: block;
             margin: 0 auto;
             text-align: center;

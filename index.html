@@ -6,12 +6,10 @@
 <meta name="generator" content="WYSIWYG Web Builder 18 - https://www.wysiwygwebbuilder.com">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="css/font-awesome.min.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 <link href="css/mobile_maxkombat.css" rel="stylesheet">
 <link href="css/index.css" rel="stylesheet">
 <script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/wb.overlay.min.js"></script>
-<script src="js/wwb18.min.js"></script>
 <script>
 $(document).ready(function()
 {
@@ -31,15 +29,14 @@ $(document).ready(function()
 <div id="Layer3">
 </div>
 <div id="wb_Image1">
-<img src="images/lvl1.jpg" id="Image1" alt="" width="203" height="203"><div id="Image1-overlay">lvl 1</div>
+<a href="#" onclick="window.navigator.vibrate(200);return false;"><img src="images/lvl1.jpg" id="Image1" alt="" width="203" height="203"></a><div id="Image1-overlay">lvl 1</div>
 </div>
 <div id="Html1">
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <script>
-	btn.onclick = e => navigator.vibrate(200);
-	</script>
+ </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Клики</title>
@@ -49,8 +46,9 @@ $(document).ready(function()
     <h1></h1>
     <h4></h4>
     <p>
-        <font size="3" color="white" face="Arial">
-               ⠀⠀Макс коинов намийнино
+        <font size="3" color="white" face="impact"
+        style="animation: fadeIn 2s ease-in;">
+               ⠀⠀ ⠀ ⠀$MXTC Намийнино
         </font>
     </p>
     <p>
@@ -71,7 +69,7 @@ $(document).ready(function()
             count++;
             disp.innerHTML = count;
             localStorage.setItem("clickCount", count);
-            disp.style.animation = "fadeIn 1s ease-in-out";
+            disp.style.animation = "fadeIn 2s ease-in-out";
         }
 
         
@@ -99,26 +97,7 @@ $(document).ready(function()
 </a>
 </div>
 </div>
-<div id="Layer6">
-<div id="wb_Image14">
-<a href="#" onclick="SetImage('Image1','images/skin1.jpg');return false;"><img src="images/skin1.jpg" id="Image14" alt="" width="49" height="49"></a></div>
-<div id="wb_Image15">
-<a href="#" onclick="SetImage('Image1','images/skin1.jpg');return false;"><img src="images/skin1.jpg" id="Image15" alt="" width="49" height="49"></a></div>
-<div id="wb_Image17">
-<a href="#" onclick="SetImage('Image1','images/skin1.jpg');return false;"><img src="images/skin1.jpg" id="Image17" alt="" width="49" height="49"></a></div>
-<div id="wb_Image18">
-<a href="#" onclick="SetImage('Image1','images/skin1.jpg');return false;"><img src="images/skin1.jpg" id="Image18" alt="" width="49" height="49"></a></div>
-<div id="wb_Image19">
-<a href="#" onclick="SetImage('Image1','images/skin1.jpg');return false;"><img src="images/skin1.jpg" id="Image19" alt="" width="49" height="49"></a></div>
-<div id="wb_Image21">
-<a href="#" onclick="SetImage('Image1','images/skin1.jpg');return false;"><img src="images/skin1.jpg" id="Image21" alt="" width="49" height="49"></a></div>
-<div id="wb_Image23">
-<a href="#" onclick="SetImage('Image1','images/skin1.jpg');return false;"><img src="images/skin1.jpg" id="Image23" alt="" width="49" height="49"></a></div>
-<div id="wb_Image24">
-<a href="#" onclick="SetImage('Image1','images/skin1.jpg');return false;"><img src="images/skin1.jpg" id="Image24" alt="" width="49" height="49"></a></div>
-<div id="wb_Text1">
-<span style="color:#FFA500;font-family:'Open Sans';font-size:16px;"><strong>Скины</strong></span></div>
-</div>
+<input type="submit" id="Button1" name="" value="Вывести МаксКоины">
 </div>
 <div id="OverlayMenu1-overlay">
 <div class="OverlayMenu1">
