@@ -29,7 +29,22 @@ $(document).ready(function()
 <div id="Layer3">
 </div>
 <div id="wb_Image1">
-<a href="#" onclick="window.navigator.vibrate(20);return false;"><img src="images/lvl1.jpg" id="Image1" alt="" width="203" height="203"></a><div id="Image1-overlay">lvl 1</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+function vibrateAndPrevent(event) {
+  window.navigator.vibrate(20);
+  event.preventDefault();
+}
+</script>
+</head>
+<body>
+
+</body>
+</html><a href="#" onclick="window.navigator.vibrate(20);return false;"><img src="images/lvl1.jpg" id="Image1" alt="" width="203" height="203"></a><div id="Image1-overlay">lvl 1</div>
 </div>
 <div id="Html1">
 <!DOCTYPE html>
