@@ -274,7 +274,7 @@ body
 #Button1
 {
    box-sizing: border-box;
-   line-height: 22px;
+   line-height: 27px;
    text-decoration: none;
    vertical-align: top;
    border: 1px solid #4F4F4F;
@@ -290,27 +290,27 @@ body
    text-align: center;
    -webkit-appearance: none;
    margin: 0;
-   animation: fall 2300ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 200ms 1 normal both;
+   animation: animate-fade-in-down 1000ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 780ms 1 normal both;
 }
 }
 #Button1:focus
 {
    outline: 0;
 }
+#Button1:active
+{
+   background-color: #808080;
+   transition: background-color 500ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms;
+}
 #Button1:hover
 {
    border-color: #FFA500;
-   transition: border-color 500ms linear 0ms;
+   transition: border-color 500ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms;
 }
 #Button1
 {
    border-color: #4F4F4F;
-   transition: border-color 500ms linear 0ms;
-}
-#Button1:active
-{
-   background-color: #A9A9A9;
-   transition: background-color 500ms linear 0ms;
+   transition: border-color 500ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms;
 }
 #wb_Icon1
 {
@@ -325,8 +325,8 @@ body
 #wb_OverlayMenu1
 {
    position: absolute;
-   left: 1px;
-   top: 3px;
+   left: 5px;
+   top: 6px;
    width: 41px;
    height: 31px;
    z-index: 0;
@@ -335,7 +335,7 @@ body
 {
    position: absolute;
    left: 75px;
-   top: 270px;
+   top: 268px;
    width: 215px;
    height: 48px;
    z-index: 4;
@@ -352,10 +352,10 @@ body
 #Button1
 {
    position: absolute;
-   left: 81px;
-   top: 353px;
-   width: 203px;
-   height: 26px;
+   left: 78px;
+   top: 360px;
+   width: 208px;
+   height: 31px;
    z-index: 7;
 }
 #Layer1
@@ -374,8 +374,8 @@ body
    text-align: left;
    left: 39px;
    top: 73px;
-   width: 42px;
-   height: 34px;
+   width: 50px;
+   height: 42px;
    z-index: 6;
 }
 #Layer3
@@ -385,7 +385,7 @@ body
    left: 28px;
    top: 67px;
    width: 308px;
-   height: 325px;
+   height: 333px;
    z-index: 2;
 }
 #Layer4
@@ -417,9 +417,9 @@ body
 #Layer3
 {
    left: 25px;
-   top: 62px;
+   top: 61px;
    width: 308px;
-   height: 307px;
+   height: 325px;
    visibility: visible;
    display: block;
 }
@@ -435,7 +435,7 @@ body
 #wb_Image1
 {
    left: 78px;
-   top: 78px;
+   top: 83px;
    width: 203px;
    height: 203px;
    visibility: visible;
@@ -445,9 +445,9 @@ body
 }
 #Html1
 {
-   left: 78px;
-   top: 265px;
-   width: 203px;
+   left: 72px;
+   top: 269px;
+   width: 215px;
    height: 48px;
    visibility: visible;
    display: inline;
@@ -527,10 +527,10 @@ body
 }
 #Button1
 {
-   left: 78px;
-   top: 322px;
-   width: 203px;
-   height: 26px;
+   left: 75px;
+   top: 344px;
+   width: 208px;
+   height: 31px;
    visibility: visible;
    display: inline;
    margin: 0;
@@ -538,11 +538,8 @@ body
 }
 #Button1
 {
-   line-height: 22px;
+   line-height: 27px;
 }
-}
-a:focus {
-  outline: none;
 }
         @keyframes fadeIn {
             from {

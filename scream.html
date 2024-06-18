@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Безымянная страница</title>
+<meta name="generator" content="WYSIWYG Web Builder 18 - https://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/mobile_maxkombat.css" rel="stylesheet">
+<link href="css/scream.css" rel="stylesheet">
+</head>
+<body>
+<div id="Layer1">
+<div id="wb_Image1">
+<img src="images/Screenshot 2024-06-18 at 19-55-08 WhatsApp.png" id="Image1" alt="" width="217" height="360"></div>
+<div id="wb_JavaScript1">
+<div id="typewriter"></div>
+<script>
+var ch = 0;
+var txt = 'Fatal error: [File:D:\Jenkins\Live\Engine\Source\Runtime\D3D12RHI\Private\D3D12Util.cpp] [Line: 873] Interfaces.CopyCommandList->Close() failed at D:\Jenkins\Live\Engine\Source\Runtime\D3D12RHI\Private\D3D12CommandList.cpp:268 with error E_INVALIDARG';
+var speed = 1;
+var pause = 5000;
+
+function typeWriterInit()
+{
+   ch = 0; 
+   document.getElementById("typewriter").innerHTML = '';
+   typeWriter();
+}
+function typeWriter() 
+{
+   if (ch < txt.length) 
+   {
+      document.getElementById("typewriter").innerHTML += txt.charAt(ch);
+      ch++;
+      setTimeout(typeWriter, speed);
+   }
+   else
+   {
+      if (pause > 0)
+      {
+          setTimeout(typeWriterInit, pause);
+      }
+   }
+}
+typeWriterInit();
+</script></div>
+<div id="wb_MediaPlayer1">
+<audio id="MediaPlayer1" controls>
+<source src="lego-breaking.mp3" type="audio/mpeg">
+</audio>
+</div>
+</div>
+</body>
+</html>
